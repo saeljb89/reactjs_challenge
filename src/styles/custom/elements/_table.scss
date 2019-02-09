@@ -1,0 +1,104 @@
+.ReactTable.app-table {
+  border-right: 0;
+  border-left: 0;
+
+  .rt-table {
+
+    .rt-thead {
+
+      &.-header {
+        box-shadow: none;
+        background-color: $gray-light;
+        border-bottom: solid 2px $gray-300;
+      }
+
+      .rt-tr {
+        text-align: left;
+      }
+
+      .rt-th {
+        padding: 10px;
+        border-right: none;
+
+        &.-sort-desc,
+        &.-sort-asc {
+          box-shadow: none;
+
+          & > div:first-child::after {
+            margin: 0 10px;
+            color: $gray-light;
+          }
+        }
+
+        &.-sort-desc > div:first-child::after {
+          content: "\25BC";
+        }
+
+        &.-sort-asc > div:first-child::after {
+          content: "\25B2";
+        }
+
+        .rt-resizable-header-content {
+          display: inline;
+          font-size: 12px;
+          color: $gray-light;
+        }
+      }
+    }
+
+    .rt-tbody {
+      .rt-td {
+        border-right: none;
+        padding: 15px 10px;
+      }
+    }
+  }
+
+  .rt-noData {
+    position: relative;
+    padding: 15px 10px;
+    left: 0;
+    transform: initial;
+    text-align: center;
+  }
+
+  .-pagination {
+    box-shadow: none;
+    border-top: 0;
+
+    .Select {
+      width: 60px;
+
+      input {
+        border: 0
+      }
+    }
+
+    .-pageJump input {
+      text-align: center;
+      width: 50px;
+    }
+
+    .form-group {
+      margin: 0;
+    }
+  }
+
+  .-loading-inner circle {
+    stroke: $cyan !important;
+  }
+
+  &-white {
+
+    .rt-table {
+
+      .rt-thead {
+
+        &.-header {
+          background-color: white;
+          border-bottom-width: 1px;
+        }
+      }
+    }
+  }
+}

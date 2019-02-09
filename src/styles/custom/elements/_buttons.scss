@@ -1,0 +1,15 @@
+.btn-xsm {
+  padding: 0.20rem 0.40rem;
+
+  i {
+    font-size: 10px;
+  }
+}
+
+.btn-outline-orange {
+  @include button-variant($orange, $orange);
+  
+  i {
+    color: white;
+  }
+}

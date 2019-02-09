@@ -1,0 +1,71 @@
+.page-agent {
+
+  .box {
+    position: fixed;
+    width: 25%;
+
+    .box-body {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    &.box-left .box-body {
+      height: calc(100vh - 244px);
+
+      &-notifications {
+        height: calc(100vh - 112px);
+      }
+    }
+
+    &.box-right .box-body {
+      height: calc(100vh - 122px);
+    }
+  }
+
+  .box-center {
+    overflow-y: auto;
+    height: calc(100vh - 128px);
+
+    iframe {
+      height: calc(100vh - 140px);
+    }
+  }
+
+  .box-unload-channel {
+    overflow-y: auto;
+    height: calc(100vh - 65px);
+  }
+
+  .box-center-selectable-parent {
+    overflow-y: auto;
+    height: calc(100vh - 65px);
+  }
+
+  .box-center-selectable {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 426px);
+  }
+}
+
+.profile-tab {
+
+  .btn-account {
+    padding: 0 !important;
+    width: 24px !important;
+    height: 20px !important;
+
+    > div {
+      max-height: 20px;
+    }
+
+    svg {
+      height: 20px !important;
+    }
+  }
+}
+
+.modal-search-incms .content {
+  max-height: 50vh;
+  overflow-y: auto;
+}

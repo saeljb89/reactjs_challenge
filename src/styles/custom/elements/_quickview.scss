@@ -1,0 +1,32 @@
+.quickview-wrapper {
+
+  .customizer-toggle-tab-1 {
+    top: $l_header_height !important;
+    z-index: 1;
+  }
+  .customizer-toggle-tab-2 {
+    top: $l_header_height + 50 !important;
+    z-index: 1;
+  }
+
+  &:before, &:after {
+    border: solid rgba(0, 0, 0, .1);
+    border-width: 1px 0 1px 1px;
+    box-shadow: none;
+  }
+
+  &:before {
+    top: $l_header_height
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: $l_header_height + 50;
+    left: -47px;
+    width: 48px;
+    height: 50px;
+    background-color: $bright;
+    border-radius: 0 4px 4px 0;
+  }
+}

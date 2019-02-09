@@ -1,0 +1,87 @@
+.form-group {
+
+  .form-control:focus {
+    border-color: $blue;
+    outline: 0 none;
+  }
+
+  .-hasError {
+    .form-control, .input-group-addon {
+      border: 1px solid $red;
+    }
+    .FormError {
+      color: $red
+    }
+  }
+
+  .form-control {
+
+    &.Select {
+      padding: 0;
+
+      .Select-placeholder, .Select--single > .Select-control .Select-value {
+        color: $gray-600;
+      }
+
+      &.is-focused {
+        border: 1px solid $gray;
+
+        > .Select-control {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+
+      .Select-control {
+        border: 0;
+        height: 31px;
+      }
+
+      .Select-input {
+        height: 30px;
+      }
+
+      .Select-placeholder,
+      .Select-value {
+        line-height: 30px;
+      }
+
+      .Select-menu-outer {
+        display: block !important;
+        z-index: 1000;
+      }
+
+      .Select-option.is-focused,
+      .Select-option.is-selected {
+        background-color: $gray-100 !important;
+      }
+
+      &.Select--multi {
+        .Select-multi-value-wrapper {
+          white-space: normal;
+        }
+
+        .Select-value {
+          background-color: $gray-100;
+          border-color: $gray-200;
+          line-height: normal;
+          white-space: normal;
+
+          .Select-value-icon {
+            border-right: 0;
+            color: black;
+
+            &:focus, &:hover {
+              background-color: $gray-100;
+            }
+          }
+
+          .Select-value-label {
+            color: black;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

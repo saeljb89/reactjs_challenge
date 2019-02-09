@@ -1,0 +1,17 @@
+.indicator {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &-facebook {
+    border-color: $facebook transparent transparent transparent;
+  }
+
+  &-twitter {
+    border-color: $twitter transparent transparent transparent;
+  }
+}

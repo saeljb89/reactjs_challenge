@@ -1,0 +1,5 @@
+export const TOGGLE_LOADING = 'TOGGLE_LOADING';
+export const TOGGLE_ALERT_ERROR = 'TOGGLE_ALERT_ERROR';
+
+export const LOGIN_USER = 'LOGIN_USER';
+export const LOGOUT_USER = 'LOGOUT_USER';

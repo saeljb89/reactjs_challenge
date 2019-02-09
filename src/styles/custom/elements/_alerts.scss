@@ -1,0 +1,17 @@
+.toastify {
+  z-index: 2000 !important;
+
+  .dark-toast {
+    background: #333C44 !important;
+    color: #fff;
+    padding: 20px;
+
+    .toastify__close {
+      color: #fff;
+    }
+  }
+
+  .transparent-progress {
+    background: rgba(white, .7);
+  }
+}
